@@ -1,10 +1,14 @@
 {
     "name": "gordalina/easypay-bundle",
+    "type": "symfony-bundle",
     "description": "EasypayBundle for the Symfony Framework",
+    "keywords": ["easypay"],
+    "homepage": "https://github.com/gordalina/EasypayBundle",
+    "license": "MIT",
     "require": {
+        "php": ">=5.3.3",
         "gordalina/easypay-php": "~0.0"
     },
-    "license": "MIT",
     "authors": [
         {
             "name": "Samuel Gordalina",
