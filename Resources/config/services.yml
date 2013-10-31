@@ -1,0 +1,19 @@
+parameters:
+    gordalina.easypay.client.class: Gordalina\Easypay\Client
+    gordalina.easypay.config.class: Gordalina\Easypay\Config
+
+services:
+    gordalina.easypay.client:
+        class: %gordalina.easypay.client.class%
+        arguments: [ "@gordalina.easypay.config" ]
+        calls:
+            - [setSandbox, [ "%gordalina.easypay.client.sandbox" ]]
+
+    gordalina.easypay.config:
+        class: %gordalina.easypay.config.class%
+        arguments:
+            - %gordalina.easypay.config.user%
+            - %gordalina.easypay.config.entity%
+            - %gordalina.easypay.config.cin%
+            - %gordalina.easypay.config.language%
+            - %gordalina.easypay.config.country%

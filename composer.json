@@ -1,0 +1,19 @@
+{
+    "name": "gordalina/easypay-bundle",
+    "description": "EasypayBundle for the Symfony Framework",
+    "require": {
+        "gordalina/easypay-php": "~0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Samuel Gordalina",
+            "email": "samuel.gordalina@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-0": { "Gordalina\\Bundle\\EasypayBundle": "" }
+    },
+    "target-dir": "Gordalina/Bundle/EasypayBundle"
+}
