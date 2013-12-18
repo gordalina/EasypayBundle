@@ -7,7 +7,7 @@ services:
         class: %gordalina.easypay.client.class%
         arguments: [ "@gordalina.easypay.config" ]
         calls:
-            - [setSandbox, [ "%gordalina.easypay.client.sandbox" ]]
+            - [setSandbox, [ "%gordalina.easypay.client.sandbox%" ]]
 
     gordalina.easypay.config:
         class: %gordalina.easypay.config.class%
